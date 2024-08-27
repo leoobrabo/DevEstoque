@@ -40,7 +40,7 @@ O principal objetivo deste projeto é criar um aplicativo utilizando **Expo** co
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/devestoque.git
+   git clone https://github.com/leoobrabo/DevEstoque.git
 
 2. Navegue até o diretório do projeto:
    ```bash
