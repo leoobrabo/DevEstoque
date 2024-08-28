@@ -1,3 +1,5 @@
+![Logo do projeto](https://imgur.com/Lv6hfEy.png)
+
 # DevEstoque
 
 ## Resumo
