@@ -26,10 +26,10 @@ O principal objetivo deste projeto é criar um aplicativo utilizando **Expo** co
 ## Requisitos
 
 - **Tecnologia:**
-- ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
+  - ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
 - **Banco de Dados:** AsyncStorage
 - **Framework:** React Native
-- ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  - ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ## Instalação e Uso
 
