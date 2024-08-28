@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from 'react-native-vector-icons'; // Importa Ionicons
+import { Ionicons } from 'react-native-vector-icons';
 import Home from '../pages/Home'
 import Settings from '../pages/Setting';
 import Categories from '../pages/Categories';
@@ -15,14 +15,13 @@ const MainTabNavigator = ({ setIsAuthenticated }) => {
                     let iconName;
 
                     if (route.name === 'Produtos') {
-                        iconName = focused ? 'home' : 'home-outline'; // Use os ícones de Ionicons
+                        iconName = focused ? 'home' : 'home-outline';
                     } else if (route.name === 'Categorias') {
-                        iconName = focused ? 'list' : 'list-outline'; // Use os ícones de Ionicons
+                        iconName = focused ? 'list' : 'list-outline';
                     } else if (route.name === 'Configurações') {
-                        iconName = focused ? 'settings' : 'settings-outline'; // Use os ícones de Ionicons
+                        iconName = focused ? 'settings' : 'settings-outline';
                     }
 
-                    // Retorna o ícone correspondente
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
                 tabBarActiveTintColor: '#8A2BE2',

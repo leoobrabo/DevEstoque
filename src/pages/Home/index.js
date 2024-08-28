@@ -41,7 +41,6 @@ const Home = ({ navigation }) => {
   };
 
   const saveProduct = async () => {
-  // Validação dos campos
   if (!newProduct.name.trim()) {
     alert("Por favor, insira um nome para o produto.");
     return;
@@ -75,7 +74,7 @@ const Home = ({ navigation }) => {
     await AsyncStorage.setItem('@products', JSON.stringify(updatedProducts));
     setProducts(updatedProducts);
     setNewProduct({ name: '', quantity: 0, category: '', description: '' });
-    setModalVisible(false); // Fechar o modal após salvar o produto
+    setModalVisible(false);
   } catch (error) {
     console.error('Error saving product:', error);
   }
@@ -111,7 +110,7 @@ const Home = ({ navigation }) => {
   const editProduct = (product) => {
     setNewProduct(product);
     setEditingProduct(product);
-    setModalVisible(true); // Abrir o modal para edição
+    setModalVisible(true);
   };
 
   return (

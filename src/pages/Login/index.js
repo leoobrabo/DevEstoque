@@ -43,11 +43,10 @@ const Login = ({ navigation, setIsAuthenticated }) => {
             return;
         }
 
-        // Criar novo usuário
+  
         const newUser = { name, email, password };
         await AsyncStorage.setItem('@loggedInUser', JSON.stringify(newUser));
 
-        // Salvar sessão do usuário ou navegar no app
         Alert.alert('Tudo certo!', 'Cadastro realizado com sucesso. Faça login para continuar.');
         Keyboard.dismiss();
         toggleAuthMode();
@@ -56,7 +55,6 @@ const Login = ({ navigation, setIsAuthenticated }) => {
         Alert.alert('Erro', 'Ocorreu um problema durante o cadastro. Tente novamente.');
     }
 };
-
 
 
     const handleLogin = async () => {
@@ -167,7 +165,7 @@ const styles = StyleSheet.create({
     
   },
   button: {
-    backgroundColor: '#8A2BE2', // Cor roxa
+    backgroundColor: '#8A2BE2',
     padding: 15,
     borderRadius: 10,
     alignItems: 'center',

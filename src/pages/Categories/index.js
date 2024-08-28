@@ -38,19 +38,17 @@ const Categories = () => {
     try {
       let updatedCategories;
       if (editingCategory) {
-        // Editando uma categoria existente
         updatedCategories = categories.map((category) =>
           category === editingCategory ? newCategory.trim() : category
         );
       } else {
-        // Adicionando uma nova categoria
         updatedCategories = [...categories, newCategory.trim()];
       }
 
       await AsyncStorage.setItem('@categories', JSON.stringify(updatedCategories));
       setCategories(updatedCategories);
       setNewCategory('');
-      setEditingCategory(null); // Reseta a edição
+      setEditingCategory(null);
       Keyboard.dismiss();
     } catch (error) {
       console.error('Erro ao salvar categoria:', error);
